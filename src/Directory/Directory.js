@@ -48,7 +48,7 @@ this.state={
     render() {
         return (
             <div className="directory-menu">{
-this.state.sections.map(item =>  <MenuItem key={item.id} title={item.title} imageUrl={item.imageUrl} size={item.size} linkUrl={item.linkUrl} id={item.id}></MenuItem>)
+this.state.sections.map(({id,...otherSectionProps}) =>  <MenuItem key={id} {...otherSectionProps} ></MenuItem>)
 
             }
 </div>
