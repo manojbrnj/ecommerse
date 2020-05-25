@@ -6,6 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 import Hats from './Component/Hats/Hats';
 import ShopPage from './Pages/ShopPage/ShopPage';
 import Header from './Component/Header/Header';
+import Signinsignup from './Pages/ShopPage/Signinsignup';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Switch>
       <Route exact path='/' component={HomePage} ></Route>
       <Route path='/shop' component={ShopPage}></Route>
+      <Route path='/signin' component={Signinsignup}></Route>
       </Switch>
     </div>
   );
